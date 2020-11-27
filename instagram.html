@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Instagram</title>
+<link rel="icon" href="instagram.png"type="image/png"sizes="16x16">
+</head>
+<style type="text/css">
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: arial; sans-serif;
+	
+	}
+body, button, input, textarea{
+	color:#262626;
+	font-family: arial; sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	height: 100%;
+
+}
+
+#root{
+	z-index: 0;
+	height: 100%;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.section{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	min-height: 100%;
+	overflow: hidden;
+
+}
+.main{
+	background-color: #fafafa;
+	display: flex;
+	flex-grow: 1;
+	order: 4;
+}
+.container{
+	min-height: 100%;
+	overflow: hidden;
+	padding-bottom: 44px;
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+	justify-content: center;
+}
+
+.article{
+	margin: 0 auto;
+	max-width: 935px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+	justify-content: center;
+	}
+
+
+
+.apple{
+	width: 454px;
+	height:618px;
+	position: relative;
+	bottom: -100px;
+	left: -10px;
+background-image: url(43cc71bb1b43.png);
+background-size: 100% 100%;
+}
+
+.apple-image{
+	width:240px;
+	height:427px;
+	position: relative;
+	left: 150px;
+	bottom:-100px;
+background-image: url(1.jpg);
+ background-size: 100% 100%;
+	animation-name: simple;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+@keyframes simple {
+	0%{
+		background-image: url(1.jpg);
+ background-size: 100% 100%;
+		
+	}
+	25%{
+		background-image: url(2.jpg);
+ background-size: 100% 100%;
+	}
+	50%{
+		background-image: url(3.jpg);
+ background-size: 100% 100%;
+	}
+	100%{
+		background-image: url(4.jpg);
+ background-size: 100% 100%;
+	}
+} 
+
+
+
+
+.signup-box
+{
+	color: #262626;
+     flex-grow: 1;
+    justify-content: center;
+    margin-top: 130px;
+    max-width: 350px;
+    width: 100%;
+}
+.signup-area
+{
+background-color: #fff;
+border: 1px solid #dbdbdb;
+border-radius: 1px;
+margin: 0 0 10px;
+padding: 10px 0;
+
+}
+
+.heading{
+	margin:22px auto 12px;
+	background-image: url(32f0a4f27407.png);
+	background-repeat: no-repeat;
+	background-position: 0 -130px;
+	height: 51px;
+	width: 175px;
+   display: block;
+	overflow: hidden;
+	text-indent: 110%;
+	white-space: nowrap;
+
+}
+.form-area{
+	margin-bottom: 20px;
+	align-items: stretch;
+	border: 0 solid;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+	padding: 0;
+	position: relative;
+}
+.form-box{
+	display: flex;
+	flex-direction: column;
+}
+
+.sub-heading{
+	color: #8e8e8e;
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 20px;
+	margin: 0 40px 10px;
+	text-align: center;
+}
+.facebook-link{
+	margin-top: 8px;
+	margin-right: 40px;
+	margin-left: 40px;
+	margin-bottom: 8px;
+	display: flex;
+	flex: 0 0 auto;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.btn{
+	color: #385185;
+
+
+
+
+}
+
+.fb-icon{
+	background-image: url(32f0a4f27407.png);
+	background-repeat: no-repeat;
+	height: 16px;
+	width: 16px;
+	background-position: -414px -259px;
+	display: inline-block;
+	margin-right: 8px;
+	position: relative;
+	top: 2px;
+}
+
+.or-area{
+	display: flex;
+	flex-direction: row;
+	margin: 10px 40px 18px;
+}
+.hr-area{
+	display: flex;
+	flex-grow: 1;
+	flex-shrink: 1;
+	background-color: #dbdbdb;
+	height: 1px;
+	position: relative;
+	top: .45em;
+}
+
+.or-text{
+	color: #8e8e8e;
+	display: flex;
+	flex-shrink: 0;
+	flex-grow: 0
+	font-size:13px;
+	font-weight: 600;
+	line-height: 15px;
+	margin: 0 18px;
+	text-transform: uppercase;
+}
+.fill-area{
+	margin: 0 40px 6px;
+}
+.email-box{
+	align-items: center;
+	background: #fafafa;
+	border:1px solid #dbdbdb;
+	border-radius: 3px;
+	box-sizing: border-box;
+	color: #262626;
+	display: flex;
+	flex-direction: row;
+	font-size: 14px;
+	position: relative;
+	width: 100%;
+}
+
+.mobile{
+	display: flex;
+	height: 36px;
+	flex:1 0 0;
+	padding: 0;
+	position: relative;
+	margin: 0;
+	min-width: 0;
+}
+.text{
+	color: #8e8e8e;
+	font-size: 12px;
+	height: 36px;
+	left: 8px;
+	line-height: 36px;
+	overflow: hidden;
+	pointer-events: none;
+	position: absolute;
+	right: 0;
+	text-overflow: ellipsis;
+	user-select: none;
+	white-space: nowrap;
+}
+.input-txt{
+	font-size: 13px;
+	background: #fafafa;
+	border: 0;
+	display: flex;
+	flex: 1 0 auto;
+	margin: 0;
+	outline: 0;
+	overflow: hidden;
+	padding: 9px 0 7px 8px;
+	text-overflow: ellipsis;
+}
+
+.box-right{
+	align-items: center;
+	display: flex;
+	flex: 0 0 auto;
+	flex-direction: row;
+	height: 100%;
+	padding-right:8px;
+}
+
+.submit-btn{
+	margin-top: 8px;
+	margin-right: 40px;
+	margin-left: 40px;
+	margin-bottom: 8px;
+	display: flex;
+	flex:0 0 auto;
+	justify-content: flex-start;
+	align-items: stretch;
+
+}
+
+.submit{
+	background-color: rgba(0, 149, 246, .3);
+	opacity: 1;
+	border:1px solid transparent;
+
+	border-radius: 4px;
+	color: #fff;
+	position: relative;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: block;
+	font-weight: 600;
+	padding: 5px 9px;
+	text-align: center;
+	text-transform: inherit;
+	user-select: none;
+	width:100%;
+}
+
+.terms{
+	color: #00376b;
+	font-size: 12px;
+	line-height: 14px;
+	margin-top:12px;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+.login-box{
+	color: #262626;
+	font-size: 14px;
+	margin: 15px;
+	text-align: center;
+}
+
+.login-box a{
+	color: #0095f6;
+	text-decoration: none;
+}
+.login-box a:hover{
+
+	text-decoration: underline;
+}
+.app-area
+{
+  margin-top: 20px;
+}
+
+.app-area p{
+color: #737373;
+font-size: 14px;
+line-height: 18px;
+margin: 10px 20px 10px 20px;
+text-align: center;
+}
+
+.app-btn{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 20px 0 10px 0;
+
+}
+	
+
+
+.btn-link{
+	margin-right: 8px;
+	text-decoration: none;
+	
+}
+
+.app-store{
+	height: 40px;
+}
+
+
+.btn-link:last-child{
+	margin-right: 0;
+	
+}
+/* End Signup-area */	
+/* Start Footer-area */
+
+.footer-area
+{
+	order: 5;
+	padding: 21px 20px;
+	background-color: #f8f9fa;
+
+
+}
+.footer-box
+{
+	max-width: 1012px;
+	min-height: 80px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 38px 0;
+	font-size: 12px;
+	font-weight: 600;
+	margin: 0 auto;
+     width: 100%;
+}
+
+
+.top
+{
+	max-width: 100%;
+}
+
+
+.footer-area .footer-box .top ul{
+	list-style: none;
+	margin-right: 16px;
+	display: flex;
+	flex-grow: 1;
+	margin-top: 85px;
+
+}
+.footer-area .footer-box .top ul li
+{
+	display: inline-block;
+	margin-bottom: 50px;
+	margin-right: 16px;
+}
+
+.footer-area .footer-box .top ul li a
+{
+	text-decoration: none;
+	color:  #3e5c9a;
+}
+
+.footer-area .footer-box .bottom
+{
+	color:#737373;
+	margin-top: 85px;
+}
+
+
+
+</style>
+<body>
+	<div id="root">
+	<section class="section">
+		<div></div>
+		<main class="main">
+			<div class="container">
+				<article class="article">
+						<div class="apple">
+					<div class="apple-image">
+						</div>
+					</div>
+					
+
+					<div class="signup-box">
+						<div class="signup-area">
+							<h1 class="heading"> Instagram</h1>
+							<div class="form-area">
+								<form class="form-box">
+									
+									
+
+									<div class="fill-area">
+										<div class="email-box">
+											<label class="mobile">
+												<span class="text"></span>
+												<input class="input-txt" type="text" name="email or phone" placeholder="Mobile Number or email">
+											</label>
+											<div class="box-right"></div>
+										</div>
+									</div>
+									
+									<div class="fill-area">
+										<div class="email-box">
+											<label class="mobile">
+												<span class="text"></span>
+												<input class="input-txt" type="Password" name="email or phone" placeholder="Password">
+											</label>
+											<div class="box-right"></div>
+										</div>
+									</div>
+									<div>
+										<div class="submit-btn">
+								<button class="submit" type="submit">Log In</button>
+										</div>
+									</div>
+									<div class="or-area">
+										<div class="hr-area"></div>
+										<div class="or-text">
+											or
+										</div>
+										<div class="hr-area"></div>
+									</div>
+									
+									<div class="facebook-link">
+										<div class="btn"> 
+										
+									<span class="fb-icon"></span>
+											Log in with Facebook
+											
+									</div>
+									</div>
+
+									<a class="terms" href="#">Forgot password</a>
+									
+									
+									
+							
+								</form>
+							</div>
+					       </div>
+
+						
+						<div class="signup-area">
+							<p class="login-box">
+								Don't Have an account?
+								<a href="Sign Up-Instagram.html">Sign Up</a>
+							</p>
+						</div>
+						<div class="app-area">
+							<p>Get the app</p>
+
+<div class="app-btn">
+
+<a class="btn-link" href="#">
+	<img class="app-store" src="180ae7a0bcf7.png" alt="">
+</a>	
+<a class="btn-link" href="#">
+	<img class="app-store" src="e9cd846dc748.png" alt="">
+</a>	
+							
+						</div>
+
+					</div>
+				</article>
+			</div>
+			
+		</main>
+		
+		<footer class="footer-area">
+				<div class="footer-box">
+		<nav class="top">
+			<ul>
+				<li><a href="#"> ABOUT</a></li>
+				<li><a href="#"> HELP</a></li>
+				<li><a href="#">PRESS</a></li>
+				<li><a href="#">API</a></li>
+				<li><a href="#">JOBS</a></li>
+				<li><a href="#">PRIVACY</a></li>
+				<li><a href="#">TERMS</a></li>
+				<li><a href="#">LOCATIONS</a></li>
+				<li><a href="#">TOP ACCOUNTS</a></li>
+				<li><a href="#">HASHTAGS</a></li>
+				<li><a href="#">LANGUAGE</a></li>
+
+
+			</ul>
+		</nav>
+
+		<span class="bottom">
+			<P>&copy; 2020 INSTAGRAM FROM FACEBOOK</P>
+		</span>
+	</div>
+
+
+
+			
+		</footer>
+	</section>
+</div>
+
+</body>
+</html>
